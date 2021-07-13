@@ -13,7 +13,7 @@ module.exports = withPWA({
     disable: process.env.NODE_ENV === 'development',
     register: true
   },
-  basePath: ghPages ? '/gh-pages-next-pwa' : '',
+  basePath: !debug ? '/gh-pages-next-pwa' : '',
   assetPrefix: !debug ? '/gh-pages-next-pwa/' : ''
 });
 
