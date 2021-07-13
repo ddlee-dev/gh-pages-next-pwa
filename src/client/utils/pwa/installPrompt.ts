@@ -27,13 +27,14 @@ export function useInstallPrompt(): [
       )
     );
   };
+  console.log('PROMPT', prompt);
 
   useEffect(() => {
     const ready = (e: IBeforeInstallPromptEvent) => {
       e.preventDefault();
       setState(e);
     };
-
+    console.log('BEFORE INSTALL PROMPT BEGIN', prompt);
     window.addEventListener('beforeinstallprompt', ready as any);
 
     return () => {
