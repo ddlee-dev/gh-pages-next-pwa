@@ -1,6 +1,6 @@
 const withPWA = require('next-pwa');
 // const runtimeCaching = require('next-pwa/cache');
-const debug = process.env.NODE_ENV !== 'production';
+const production = process.env.NODE_ENV === 'production';
 
 // This file is not going through babel transformation.
 // So, we write it in vanilla JS
@@ -12,7 +12,7 @@ module.exports = withPWA({
     dest: 'public',
     register: true
   },
-  basePath: !debug ? '/gh-pages-next-pwa' : '',
-  assetPrefix: !debug ? '/gh-pages-next-pwa/' : ''
+  basePath: production ? 'https://inquisitive-entropy.github.io' : '',
+  assetPrefix: production ? '/gh-pages-next-pwa/' : ''
 });
 
