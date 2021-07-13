@@ -5,8 +5,8 @@
   "background_color": "#004740",
   "display": "fullscreen",
   "orientation": "portrait",
-  "scope": "/gh-pages-next-pwa",
-  "start_url": "/gh-pages-next-pwa",
+  "scope": "/",
+  "start_url": "https://inquisitive-entropy.github.io/gh-pages-next-pwa",
   "icons": [
     {
       "src": "icons/icon-72x72.png",
