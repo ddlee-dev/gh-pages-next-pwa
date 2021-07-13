@@ -13,20 +13,20 @@ export default function Home() {
       const wb = window.workbox;
       // add event listeners to handle any of PWA lifecycle event
       // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-window.Workbox#events
-      wb.addEventListener('installed', event => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      // wb.addEventListener('installed', event => {
+      //   console.log(`Event ${event.type} is triggered.`)
+      //   console.log(event)
+      // })
 
-      wb.addEventListener('controlling', event => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      // wb.addEventListener('controlling', event => {
+      //   console.log(`Event ${event.type} is triggered.`)
+      //   console.log(event)
+      // })
 
-      wb.addEventListener('activated', event => {
-        console.log(`Event ${event.type} is triggered.`)
-        console.log(event)
-      })
+      // wb.addEventListener('activated', event => {
+      //   console.log(`Event ${event.type} is triggered.`)
+      //   console.log(event)
+      // })
 
       // A common UX pattern for progressive web apps is to show a banner when a service worker has updated and waiting to install.
       // NOTE: MUST set skipWaiting to false in next.config.js pwa object
