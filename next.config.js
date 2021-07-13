@@ -10,7 +10,6 @@ module.exports = withPWA({
   pwa: {
     mode: 'production',
     dest: 'public',
-    disable: process.env.NODE_ENV === 'development',
     register: true
   },
   basePath: !debug ? '/gh-pages-next-pwa' : '',
