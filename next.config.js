@@ -8,9 +8,12 @@ const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = withPWA({
   pwa: {
+    mode: 'production',
     dest: 'public',
+    register: true,
     runtimeCaching,
   },
-  assetPrefix: !debug ? '/gh-pages-next-pwa/' : ''
+  assetPrefix: !debug ? '/gh-pages-next-pwa/' : '',
+  scope: '/app'
 });
 
