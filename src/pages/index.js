@@ -90,7 +90,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Next.js Boilerplate 9
+          Next.js Boilerplate 10
         </h1>
 
         <p className={styles.description}>
