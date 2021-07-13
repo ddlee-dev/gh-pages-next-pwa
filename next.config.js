@@ -13,7 +13,7 @@ module.exports = withPWA({
     disable: false,
     register: true
   },
-  basePath: production ? '' : '',
+  basePath: production ? '/gh-pages-next-pwa' : '',
   assetPrefix: production ? '/gh-pages-next-pwa/' : ''
 });
 
