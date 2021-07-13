@@ -86,15 +86,11 @@ export default function Home() {
     }
   }, [prompt]);
 
-  if (!isVisible) {
-    return <div>Not Visible</div>
-  }
-
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Next.js Boilerplate 8
+          Next.js Boilerplate 9
         </h1>
 
         <p className={styles.description}>

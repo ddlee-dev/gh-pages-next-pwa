@@ -10,17 +10,17 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <meta charSet='utf-8' />
-          <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-          <meta name='description' content='Description' />
-          <meta name='keywords' content='Keywords' />
+          <meta charSet="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="description" content="Description" />
+          <meta name="keywords" content="Keywords" />
 
-          <link rel="manifest" href={`${process.env.pathPrefix}/manifest.json`} />
-          <link rel='mask-icon' href={`${process.env.pathPrefix}/icons/icon-16x16.png`} color='#5bbad5' />
-          <link rel='shortcut icon' href='/favicon.ico' />
-          <link rel='icon' href={`${process.env.pathPrefix}/icons/icon-16x16.png`} type='image/png' sizes='16x16' />
-          <link rel='icon' href={`${process.env.pathPrefix}/icons/icon-32x32.png`} type='image/png' sizes='32x32' />
-          <link rel="apple-touch-icon" href={`${process.env.pathPrefix}/icons/apple-icon.png`}></link>
+          <link rel="manifest" href={`${process.env.basePath}/manifest.json`} />
+          <link rel="mask-icon" href={`${process.env.basePath}/icons/icon-16x16.png`} color="#5bbad5" />
+          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="icon" href={`${process.env.basePath}/icons/icon-16x16.png`} type="image/png" sizes="16x16" />
+          <link rel="icon" href={`${process.env.basePath}/icons/icon-32x32.png`} type="image/png" sizes="32x32" />
+          <link rel="apple-touch-icon" href={`${process.env.basePath}/icons/apple-icon.png`}></link>
           <meta name="theme-color" content="#317EFB"/>
         </Head>
         <body>
