@@ -5,8 +5,6 @@ import styles from '../styles/Home.module.css';
 export default function Home() {
   const [prompt, promptToInstall] = useInstallPrompt();
 
-  const hide = () => setVisibleState(false);
-
   // This hook only run once in browser after the component is rendered for the first time.
   // It has same effect as the old componentDidMount lifecycle callback.
   useEffect(() => {
@@ -80,16 +78,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    if (prompt) {
-      setVisibleState(true);
-    }
+    console.log(`Prompt`, prompt);
   }, [prompt]);
 
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Next.js Boilerplate 6
+          Next.js Boilerplate 7
         </h1>
 
         <p className={styles.description}>
