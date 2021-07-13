@@ -12,7 +12,7 @@ module.exports = withPWA({
     dest: 'public',
     register: true
   },
-  basePath: production ? 'https://inquisitive-entropy.github.io' : '',
+  basePath: production ? '/gh-pages-next-pwa' : '',
   assetPrefix: production ? '/gh-pages-next-pwa/' : ''
 });
 
