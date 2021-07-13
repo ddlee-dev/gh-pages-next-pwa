@@ -10,9 +10,10 @@ module.exports = withPWA({
   pwa: {
     mode: 'production',
     dest: 'public',
+    disable: false,
     register: true
   },
-  basePath: production ? '/gh-pages-next-pwa' : '',
+  basePath: production ? '' : '',
   assetPrefix: production ? '/gh-pages-next-pwa/' : ''
 });
 
