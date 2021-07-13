@@ -5,7 +5,7 @@ export default function Home() {
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Next.js Boilerplate 2
+          Next.js Boilerplate 3
         </h1>
 
         <p className={styles.description}>
