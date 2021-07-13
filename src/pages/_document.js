@@ -10,20 +10,18 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <meta charset='utf-8' />
-        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
-        <meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' />
-        <meta name='description' content='Description' />
-        <meta name='keywords' content='Keywords' />
-        <title>Next.js PWA Example</title>
+          <meta charset='utf-8' />
+          <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+          <meta name='description' content='Description' />
+          <meta name='keywords' content='Keywords' />
 
-        <link rel="manifest" href="/gh-pages-next-pwa/manifest.json" />
-        <link rel='mask-icon' href='/gh-pages-next-pwa/icons/icon-16x16.png' color='#5bbad5' />
-        <link rel='shortcut icon' href='/favicon.ico' />
-        <link href='/gh-pages-next-pwa/icons/icon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
-        <link href='/gh-pages-next-pwa/icons/icon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
-        <link rel="apple-touch-icon" href="/gh-pages-next-pwa/icons/apple-icon.png"></link>
-        <meta name="theme-color" content="#317EFB"/>
+          <link rel="manifest" href={`${process.env.pathPrefix}/manifest.json`} />
+          <link rel='mask-icon' href={`${process.env.pathPrefix}/icons/icon-16x16.png`} color='#5bbad5' />
+          <link rel='shortcut icon' href='/favicon.ico' />
+          <link rel='icon' href={`${process.env.pathPrefix}/icons/icon-16x16.png`} type='image/png' sizes='16x16' />
+          <link rel='icon' href={`${process.env.pathPrefix}/icons/icon-32x32.png`} type='image/png' sizes='32x32' />
+          <link rel="apple-touch-icon" href={`${process.env.pathPrefix}/icons/apple-icon.png`}></link>
+          <meta name="theme-color" content="#317EFB"/>
         </Head>
         <body>
           <Main />
