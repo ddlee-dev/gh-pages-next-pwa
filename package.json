@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage": "https://inquisitive-entropy.github.io/gh-pages-next-pwa/",
   "scripts": {
     "dev": "next",
     "build": "next build",
