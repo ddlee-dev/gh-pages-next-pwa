@@ -1,5 +1,5 @@
 const withPWA = require('next-pwa');
-const runtimeCaching = require('next-pwa/cache');
+// const runtimeCaching = require('next-pwa/cache');
 const debug = process.env.NODE_ENV !== 'production';
 
 // This file is not going through babel transformation.
@@ -10,10 +10,10 @@ module.exports = withPWA({
   pwa: {
     mode: 'production',
     dest: 'public',
-    register: true,
-    runtimeCaching,
+    disable: process.env.NODE_ENV === 'development',
+    register: true
   },
-  assetPrefix: !debug ? '/gh-pages-next-pwa/' : '',
-  scope: '/app'
+  basePath: ghPages ? '/gh-pages-next-pwa' : '',
+  assetPrefix: !debug ? '/gh-pages-next-pwa/' : ''
 });
 
