@@ -1,9 +1,10 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useInstallPrompt } from '../client/utils/pwa/installPrompt';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [prompt, promptToInstall] = useInstallPrompt();
+  const [isVisible, setVisibleState] = useState(false);
 
   // This hook only run once in browser after the component is rendered for the first time.
   // It has same effect as the old componentDidMount lifecycle callback.
@@ -78,14 +79,14 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    console.log(`Prompt`, prompt);
+    console.log('PROMPT', prompt);
   }, [prompt]);
 
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Next.js Boilerplate 7
+          Next.js Boilerplate 6
         </h1>
 
         <p className={styles.description}>
@@ -93,7 +94,6 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <button onClick={hide}>Close</button>
         <button onClick={promptToInstall}>Add to homescreen</button>
       </main>
     </div>
