@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { useInstallPrompt } from '../client/utils/pwa/installPrompt';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [prompt, promptToInstall] = useInstallPrompt();
-  const [isVisible, setVisibleState] = useState(false);
 
   const hide = () => setVisibleState(false);
 
@@ -85,10 +84,6 @@ export default function Home() {
       setVisibleState(true);
     }
   }, [prompt]);
-
-  if (!isVisible) {
-    return <div>Not Visible</div>
-  }
 
   return (
     <div className={styles.container}>
