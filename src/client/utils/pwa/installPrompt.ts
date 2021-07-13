@@ -31,6 +31,7 @@ export function useInstallPrompt(): [
 
   useEffect(() => {
     const ready = (e: IBeforeInstallPromptEvent) => {
+      console.log('READY', e);
       e.preventDefault();
       setState(e);
     };
