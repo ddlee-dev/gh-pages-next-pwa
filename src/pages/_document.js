@@ -18,9 +18,9 @@ class MyDocument extends Document {
         <title>Next.js PWA Example</title>
 
         <link rel="manifest" href="/gh-pages-next-pwa/manifest.json" />
-        <link href='/icons/icon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
-        <link href='/icons/icon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
-        <link rel="apple-touch-icon" href="/icons/apple-icon.png"></link>
+        <link href='/gh-pages-next-pwa/icons/icon-16x16.png' rel='icon' type='image/png' sizes='16x16' />
+        <link href='/gh-pages-next-pwa/icons/icon-32x32.png' rel='icon' type='image/png' sizes='32x32' />
+        <link rel="apple-touch-icon" href="/gh-pages-next-pwa/icons/apple-icon.png"></link>
         <meta name="theme-color" content="#317EFB"/>
         </Head>
         <body>
