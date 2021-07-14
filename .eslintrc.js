@@ -12,12 +12,15 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
-    'plugin:prettier/recommended'
+    'plugin:@next/next/recommended',
+    "prettier",
+    "plugin:import/typescript"
   ],
   rules: {
+    'no-unused-vars': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn'],
     // Disallow imports from src/server/ in src/pages/ except for src/pages/api
     // (see the "overrides" section for the exception)
     'import/no-restricted-paths': [

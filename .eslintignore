@@ -1,0 +1,11 @@
+**/node_modules/*
+**/out/*
+**/.next/*
+**/public/*
+**/cypress/*
+
+.eslintrc.js
+next.config.js
+next-env.d.ts
+postcss.config.js
+tailwind.config.js

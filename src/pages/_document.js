@@ -21,7 +21,7 @@ class MyDocument extends Document {
           <link rel="icon" href={`${process.env.basePath}/icons/icon-16x16.png`} type="image/png" sizes="16x16" />
           <link rel="icon" href={`${process.env.basePath}/icons/icon-32x32.png`} type="image/png" sizes="32x32" />
           <link rel="apple-touch-icon" href={`${process.env.basePath}/icons/apple-icon.png`}></link>
-          <meta name="theme-color" content="#317EFB"/>
+          <meta name="theme-color" content="#317EFB" />
         </Head>
         <body>
           <Main />
