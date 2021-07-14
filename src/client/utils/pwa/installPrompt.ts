@@ -9,33 +9,20 @@ interface IBeforeInstallPromptEvent extends Event {
   prompt(): Promise<void>;
 }
 
-export function useInstallPrompt(): [
-  IBeforeInstallPromptEvent | null,
-  () => void
-] {
-  const [prompt, setState] = useState<IBeforeInstallPromptEvent | null>(
-    null
-  );
+export function useInstallPrompt(): [IBeforeInstallPromptEvent | null, () => void] {
+  const [prompt, setState] = useState<IBeforeInstallPromptEvent | null>(null);
 
   const promptToInstall = () => {
     if (prompt) {
       return prompt.prompt();
     }
-    return Promise.reject(
-      new Error(
-        "Tried installing before browser sent 'beforeinstallprompt' event"
-      )
-    );
+    return Promise.reject(new Error("Tried installing before browser sent 'beforeinstallprompt' event"));
   };
-  console.log('PROMPT', prompt);
 
   useEffect(() => {
     const ready = (e: IBeforeInstallPromptEvent) => {
-      console.log('READY', e);
-      e.preventDefault();
       setState(e);
     };
-    console.log('BEFORE INSTALL PROMPT BEGIN', prompt);
     window.addEventListener('beforeinstallprompt', ready as any);
 
     return () => {
